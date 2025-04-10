@@ -1,0 +1,71 @@
+<!-- Menu Page with grid layout for items -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Starbucks - Menu</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="https://raw.githubusercontent.com/farazc60/Project-Images/main/starbucks/logo.png" alt="Starbucks Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="whatsnew.html">What's New</a></li>
+        <li><a href="ingredients.html">Ingredients</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">🛒 Cart</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Signup</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="menu-content">
+    <h2>Our Delicious Menu</h2>
+    <div class="menu-grid">
+      <!-- White Chocolate -->  
+      <div class="menu-item">
+        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/main/starbucks/img1.png" alt="White Chocolate">
+        <h3>White Chocolate</h3>
+        <p>A smooth blend of creamy white chocolate flavors.</p>
+        <p class="price">Price: ₹750</p>
+        <label>Quantity: <input type="number" min="1" value="1" id="qty1"></label>
+        <button onclick="addToCart('White Chocolate', 750, document.getElementById('qty1').value, 'https://raw.githubusercontent.com/farazc60/Project-Images/main/starbucks/img1.png')">
+          Add to Cart
+        </button>
+      </div>
+      <!-- Cherry Blossom -->  
+      <div class="menu-item">
+        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/main/starbucks/img2.png" alt="Cherry Blossom">
+        <h3>Cherry Blossom</h3>
+        <p>A delightful, floral-inspired treat perfect for spring.</p>
+        <p class="price">Price: ₹850</p>
+        <label>Quantity: <input type="number" min="1" value="1" id="qty2"></label>
+        <button onclick="addToCart('Cherry Blossom', 850, document.getElementById('qty2').value, 'https://raw.githubusercontent.com/farazc60/Project-Images/main/starbucks/img2.png')">
+          Add to Cart
+        </button>
+      </div>
+      <!-- Unicorn Frappuccino -->  
+      <div class="menu-item">
+        <img src="https://raw.githubusercontent.com/farazc60/Project-Images/main/starbucks/img3.png" alt="Unicorn Frappuccino">
+        <h3>Unicorn Frappuccino</h3>
+        <p>Experience the magic with our colorful and delicious blend.</p>
+        <p class="price">Price: ₹1000</p>
+        <label>Quantity: <input type="number" min="1" value="1" id="qty3"></label>
+        <button onclick="addToCart('Unicorn Frappuccino', 1000, document.getElementById('qty3').value, 'https://raw.githubusercontent.com/farazc60/Project-Images/main/starbucks/img3.png')">
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Starbucks. All Rights Reserved.</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
